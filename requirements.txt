@@ -1,0 +1,6 @@
+SQLAlchemy==1.3.9
+Flask
+Flask-SQLAlchemy
+flask-script
+flask-migrate
+flask-marshmallow
