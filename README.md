@@ -120,8 +120,16 @@ acabei fazendo a serialização na mão.
 
 **Evidência de testes**
 
-- ###### Lista de todos pokemons
+- ###### Pokemons
 
  ![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/pokemons/Captura%20de%20tela%20de%202021-03-18%2015-37-50.png)
  ![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/pokemons/Captura%20de%20tela%20de%202021-03-18%2015-47-06.png)
  ![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/pokemons/Captura%20de%20tela%20de%202021-03-18%2015-45-00.png)
+
+- ###### Times
+
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2015-49-46.png)
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2015-50-46.png)
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2015-52-03.png)
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2015-52-37.png)
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2015-55-01.png)
