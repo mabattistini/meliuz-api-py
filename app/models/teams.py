@@ -6,7 +6,7 @@ class TeamsModel(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(5), unique=True)
-    coach = db.Column(db.String(255),nullable=False)
+    coach = db.Column(db.String(255), nullable=False)
 
     def __init__(self, name, coach):
         self.name = name
@@ -49,6 +49,9 @@ class TeamsPokemonsModel(db.Model):
         db.session.add(self)
         db.session.commit()
 
+    def update(self):
+        db.session.commit()
+
     def delete_from_db(self):
         db.session.delete(self)
         db.session.commit()
@@ -60,3 +63,12 @@ class TeamsPokemonsModel(db.Model):
     @classmethod
     def find_by_id(cls, _id):
         return cls.query.filter_by(id=_id).first()
+
+    @classmethod
+    def get_by_team(cls, team_id):
+        return cls.query.filter_by(team_id=team_id).all()
+
+    @classmethod
+    def count_pokemons(cls, team_id):
+        rows = cls.query.filter_by(team_id=team_id).all()
+        return len(rows)
