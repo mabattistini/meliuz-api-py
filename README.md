@@ -14,3 +14,6 @@ programming language: Python
 
 `./install.sh`
 
+3. Para Instanciar o serviço
+
+`venv/bin/python /desenv/meliuz/meliuz-api-py/main.py`
