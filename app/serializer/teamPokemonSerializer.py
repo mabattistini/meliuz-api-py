@@ -1,4 +1,4 @@
-def TeamPokemonSerializer(rows, many=False):
+def team_pokemon_serializer(rows, many=False):
     result = []
 
     def json_record(row):

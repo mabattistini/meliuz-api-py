@@ -1,4 +1,4 @@
-def TeamsSerializer(rows, many=False):
+def teams_serializer(rows, many=False):
     result = []
 
     def json_record(row):

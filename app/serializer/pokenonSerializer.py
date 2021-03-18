@@ -1,7 +1,7 @@
 from app.models.pokemon import TypesModel
 
 
-def serializer(rows, many=False):
+def pokemon_serializer(rows, many=False):
     result = []
 
     def json_record(row):
@@ -12,9 +12,12 @@ def serializer(rows, many=False):
             'weight': row.weight,
             'xp': row.xp,
             'image': row.image,
-            'types': []}
+            'types': []
+        }
+
         for row_type in row.types:
             result_dict['types'].append(row_type.name)
+
         return result_dict
 
     if not many:

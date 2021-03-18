@@ -1,4 +1,3 @@
-from app.controllers.pokemonController import PokemonController
 from app.models.pokemon import PokemonModel
 from app.models.teams import TeamsModel, TeamsPokemonsModel
 
@@ -28,6 +27,7 @@ class TeamsController(object):
         team = TeamsModel.find_by_id(id)
         team.delete_from_db()
         return None
+
 
 class TeamsPokemonController(object):
 
@@ -78,4 +78,3 @@ class TeamsPokemonController(object):
 
         team_pokemon.delete_from_db()
         return None
-

@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify, request
 
 from app.controllers.pokemonController import PokemonController
 from app.controllers.typesControllers import TypesController
-from app.serializer.pokenonSerializer import serializer as pokenonSerializer
+from app.serializer.pokenonSerializer import pokemon_serializer
 
 pokemon_view = Blueprint('pokemon_view', __name__)
 
@@ -10,7 +10,7 @@ pokemon_view = Blueprint('pokemon_view', __name__)
 @pokemon_view.route('/all', methods=['GET'])
 def all():
     rows = PokemonController().get_all()
-    response = pokenonSerializer(rows, many=True)
+    response = pokemon_serializer(rows, many=True)
     return jsonify({'pokemons': response})
 
 
@@ -33,6 +33,6 @@ def filter():
             type_list=filter_type
         )
 
-    response = pokenonSerializer(rows, many=True)
+    response = pokemon_serializer(rows, many=True)
 
     return jsonify({'pokemons': response})

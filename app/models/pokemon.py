@@ -1,5 +1,4 @@
 from app.models import db
-from app.models import ma
 
 
 class PokemonModel(db.Model):
@@ -44,14 +43,6 @@ class PokemonModel(db.Model):
         return result
 
 
-class PokemonSchema(ma.Schema):
-    class Meta:
-        model = PokemonModel
-
-        # Fields to expose
-        fields = ("id", "name", "height", "weight", "xp", "image", "types1")
-
-
 class TypesModel(db.Model):
     __tablename__ = 'types'
 
@@ -87,8 +78,4 @@ class TypesModel(db.Model):
         return result
 
 
-class TypesShema(ma.Schema):
-    class Meta:
-        model = TypesModel
 
-        fields = ('id', 'name')

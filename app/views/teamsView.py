@@ -1,10 +1,8 @@
-import sqlite3
-
 from flask import Blueprint, jsonify, request, json
 
 from app.controllers.teamsController import TeamsController, TeamsPokemonController
-from app.serializer.teamPokemonSerializer import TeamPokemonSerializer
-from app.serializer.teamsSerializer import TeamsSerializer
+from app.serializer.teamPokemonSerializer import team_pokemon_serializer
+from app.serializer.teamsSerializer import teams_serializer
 
 teams_view = Blueprint('teams_view', __name__)
 
@@ -13,7 +11,7 @@ teams_view = Blueprint('teams_view', __name__)
 @teams_view.route('/', methods=['GET'])
 def all():
     rows = TeamsController().get_all()
-    response = TeamsSerializer(rows, many=True)
+    response = teams_serializer(rows, many=True)
     return jsonify({'teams': response})
 
 
@@ -34,18 +32,20 @@ def crudTeam():
     if request.method == 'POST':
         try:
             team = TeamsController().create(name=name, coach=coach)
-            response = TeamsSerializer(team)
+            response = teams_serializer(team)
         except Exception as e:
             if str(e).find('UNIQUE constraint failed') > -1:
                 return jsonify({'error': {'message': 'Já existe um time cadastrado com este nome'}}), 400
             else:
                 return jsonify({'error': {'message': str(e)}}), 400
+
     elif request.method == 'PUT':
         id = request.args.get('id')
         if not id:
             return jsonify({'error': {'message': 'Informar o id do time'}}), 400
         team = TeamsController().update(id=id, name=name, coach=coach)
-        response = TeamsSerializer(team)
+        response = teams_serializer(team)
+
     elif request.method == 'DELETE':
         id = request.args.get('id')
         if not id:
@@ -72,7 +72,7 @@ def crudTeamPokemon():
         else:
             rows = TeamsPokemonController().get_all(team=team_id)
 
-        response = TeamPokemonSerializer(rows, many=True)
+        response = team_pokemon_serializer(rows, many=True)
 
     elif request.method == 'POST':
         try:
@@ -82,7 +82,7 @@ def crudTeamPokemon():
             return jsonify({'error': {'message': 'dados não informados'}}), 400
         try:
             row = TeamsPokemonController().create(team_id=team, pokemon_id=pokemon)
-            response = TeamPokemonSerializer(row)
+            response = team_pokemon_serializer(row)
         except Exception as e:
             return jsonify({'error': {'message': str(e)}}), 400
     elif request.method == 'PUT':
@@ -97,7 +97,7 @@ def crudTeamPokemon():
 
         try:
             row = TeamsPokemonController().update(id=id, pokemon_id=pokemon)
-            response = TeamPokemonSerializer(row)
+            response = team_pokemon_serializer(row)
         except Exception as e:
             return jsonify({'error': {'message': str(e)}}), 400
     elif request.method == 'DELETE':

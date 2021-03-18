@@ -6,7 +6,6 @@ from config import SQLALCHEMY_DATABASE_URI
 
 
 def create_app(config_filename):
-
     app = Flask(__name__)
 
     app.config.from_object(config_filename)
@@ -17,9 +16,8 @@ def create_app(config_filename):
     app.config['PROPAGATE_EXCEPTIONS'] = True
 
     from app.models import db
-    from app.models import ma
+
     db.init_app(app)
-    ma.init_app(app)
 
     from app.views.main import main_view
     from app.views.pokemonView import pokemon_view
