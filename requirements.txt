@@ -5,3 +5,4 @@ flask-script
 flask-migrate
 flask-marshmallow
 marshmallow-sqlalchemy
+uwsgi

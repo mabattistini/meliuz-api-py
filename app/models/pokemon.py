@@ -72,7 +72,6 @@ class TypesModel(db.Model):
         if type_list and not name_list:
             result = cls.query.filter(cls.name.in_(type_list)).all()
         else:
-            print(type_list, name_list)
             result = cls.query.filter(cls.name.in_(type_list)). \
                 join(PokemonModel).filter(PokemonModel.name.in_(name_list)).all()
         return result
