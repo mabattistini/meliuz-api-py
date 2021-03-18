@@ -123,3 +123,5 @@ acabei fazendo a serialização na mão.
 - ###### Lista de todos pokemons
 
  ![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/pokemons/Captura%20de%20tela%20de%202021-03-18%2015-37-50.png)
+ ![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/pokemons/Captura%20de%20tela%20de%202021-03-18%2015-47-06.png)
+ ![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/pokemons/Captura%20de%20tela%20de%202021-03-18%2015-45-00.png)
