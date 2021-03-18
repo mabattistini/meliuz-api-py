@@ -121,4 +121,4 @@ acabei fazendo a serialização na mão.
 **Evidência de testes**
 
 - ###### Lista de todos pokemons
- ![](testes/pokemons/Captura de tela de 2021-03-18 15-37-50.png)
+ ![](./testes/pokemons/Captura de tela de 2021-03-18 15-37-50.png)
