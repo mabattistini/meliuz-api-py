@@ -9,5 +9,5 @@ DATABASE = os.path.dirname(__file__) + os.path.sep + 'database/Pokemon.db'
 
 SQLALCHEMY_DATABASE_URI = 'sqlite:////' + DATABASE
 
-print(SQLALCHEMY_DATABASE_URI)
+
 

@@ -18,15 +18,16 @@ class SqliteDB(object):
             for pokemon in pokemons:
                 try:
                     self.cursor.execute('INSERT INTO pokemons '
-                                        '(id, name, height, weight, xp, image, types) '
+                                        '(id, name, height, weight, xp, image, types1) '
                                         'VALUES(?, ?, ?, ?, ?, ?, ?);',
                                         (pokemon['id'], pokemon['name'], pokemon['height'],
                                          pokemon['weight'], pokemon['xp'], pokemon['image'],
-                                         str(pokemon['types'])))
+                                         ','.join(pokemon['types'])))
 
                     for type_pokemon in pokemon['types']:
                         self.cursor.execute('INSERT INTO types (pokemon_id, name) '
                                             'VALUES(?, ?);', (pokemon['id'], type_pokemon))
+
                     self.conn.commit()
                 except sqlite3.IntegrityError as error:
                     if str(error).find('UNIQUE constraint failed') == 0:
@@ -40,4 +41,4 @@ class SqliteDB(object):
 if __name__ == '__main__':
     args = sys.argv
     path = args[1]
-    db = SqliteDB(database=path+'/Pokemon.db', json_file=path+'/Pokemons.json')
+    db = SqliteDB(database=path + '/Pokemon.db', json_file=path + '/Pokemons.json')
