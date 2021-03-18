@@ -45,9 +45,11 @@ acabei fazendo a serialização na mão.
     `http://0.0.0.0:5000/pokemon`
 
 - Obter uma lista filtrada pelo nome
-   `http://0.0.0.0:5000/pokemon/filter?name=bulbasaur,venusaur`
+   
+    `http://0.0.0.0:5000/pokemon/filter?name=bulbasaur,venusaur`
   
 - Obter uma lista filtrada pelo tipo
+    
     `http://0.0.0.0:5000/pokemon/filter?type=fire,flying`
 
 
