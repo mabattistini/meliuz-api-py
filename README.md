@@ -53,4 +53,40 @@ acabei fazendo a serialização na mão.
     `http://0.0.0.0:5000/pokemon/filter?type=fire,flying`
 
 
+- Criar um time 
 
+  `curl --request POST \
+    --url http://localhost:5000/team \
+    --header 'content-type: application/json' \
+    --data '{
+      "name": "time1",
+      "coach": "treinador"
+  }'`
+
+- Alterar um time
+  
+  `curl --request PUT \
+    --url 'http://localhost:5000/team?id=1' \
+    --header 'content-type: application/json' \
+    --data '{
+      "name": "time1",
+      "coach": "treinador"
+  }'`
+  
+- Excluir um time
+  
+  `curl --request DELETE \
+    --url 'http://localhost:5000/team?id=1' \
+    --header 'content-type: application/json'`
+
+
+
+- Incluir um pokemon em um time
+
+  `curl --request POST \
+    --url http://localhost:5000/team/pokemon \
+    --header 'content-type: application/json' \
+    --data '{
+      "team_id": 1,
+      "pokemon_id": 8
+  }'`
