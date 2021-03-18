@@ -106,3 +106,13 @@ acabei fazendo a serialização na mão.
   `curl --request DELETE \
     --url 'http://localhost:5000/team/pokemon?id=8' \
     --header 'content-type: application/json'`
+  
+- Listar todos times e seus pokemons
+
+  `curl --request GET \
+    --url http://localhost:5000/team/pokemon`
+  
+- Listar os pokemons de um time
+  
+  `curl --request GET \
+    --url 'http://localhost:5000/team/pokemon?team_id=1'`
