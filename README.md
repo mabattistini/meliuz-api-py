@@ -116,3 +116,9 @@ acabei fazendo a serialização na mão.
   
   `curl --request GET \
     --url 'http://localhost:5000/team/pokemon?team_id=1'`
+  
+
+**Evidência de testes**
+
+
+ ![]('testes/pokemons/Captura de tela de 2021-03-18 15-37-50.png')
