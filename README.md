@@ -136,11 +136,11 @@ acabei fazendo a serialização na mão.
 
 - ###### Times x Pokemons
 
-![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2016-06-48.png)
-![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2016-08-28.png)
-![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2016-10-30.png)
-![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2016-11-15.png)
-![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2016-12-09.png)
-![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2016-12-44.png)
-![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2016-13-22.png)
-![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/times/Captura%20de%20tela%20de%202021-03-18%2016-14-06.png)
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/timesxpokemons/Captura%20de%20tela%20de%202021-03-18%2016-06-48.png)
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/timesxpokemons/Captura%20de%20tela%20de%202021-03-18%2016-08-28.png)
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/timesxpokemons/Captura%20de%20tela%20de%202021-03-18%2016-10-30.png)
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/timesxpokemons/Captura%20de%20tela%20de%202021-03-18%2016-11-15.png)
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/timesxpokemons/Captura%20de%20tela%20de%202021-03-18%2016-12-09.png)
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/timesxpokemons/Captura%20de%20tela%20de%202021-03-18%2016-12-44.png)
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/timesxpokemons/Captura%20de%20tela%20de%202021-03-18%2016-13-22.png)
+![](https://github.com/mabattistini/meliuz-api-py/blob/master/testes/timesxpokemons/Captura%20de%20tela%20de%202021-03-18%2016-14-06.png)
