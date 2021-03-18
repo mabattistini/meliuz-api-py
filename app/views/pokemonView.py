@@ -7,6 +7,7 @@ from app.serializer.pokenonSerializer import pokemon_serializer
 pokemon_view = Blueprint('pokemon_view', __name__)
 
 
+@pokemon_view.route('', methods=['GET'])
 @pokemon_view.route('/all', methods=['GET'])
 def all():
     rows = PokemonController().get_all()

@@ -38,4 +38,17 @@ encontrei algumas dificuldades com a versão, então devido ao tempo
 acabei fazendo a serialização na mão.
 
 
+**Documentação**
+
+- Obter uma lista geral dos pokemons
+
+    `http://0.0.0.0:5000/pokemon`
+
+- Obter uma lista filtrada pelo nome
+   `http://0.0.0.0:5000/pokemon/filter?name=bulbasaur,venusaur`
+  
+- Obter uma lista filtrada pelo tipo
+    `http://0.0.0.0:5000/pokemon/filter?type=fire,flying`
+
+
 
