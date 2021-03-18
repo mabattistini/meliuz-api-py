@@ -90,3 +90,19 @@ acabei fazendo a serialização na mão.
       "team_id": 1,
       "pokemon_id": 8
   }'`
+  
+
+- Trocar o pokemon em um time
+
+  `curl --request PUT \
+    --url 'http://localhost:5000/team/pokemon?id=1' \
+    --header 'content-type: application/json' \
+    --data '{
+      "pokemon_id": 100
+  }'`
+  
+- Excluir um pokemon de um time
+
+  `curl --request DELETE \
+    --url 'http://localhost:5000/team/pokemon?id=8' \
+    --header 'content-type: application/json'`
